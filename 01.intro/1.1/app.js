@@ -1,3 +1,5 @@
 (() => {
-    // YOUR CODE HERE
+    let animal = 'cat';
+
+    console.log(animal);
 })();
