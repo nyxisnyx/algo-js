@@ -1,6 +1,5 @@
-let i = 1;
-
-for (i<=100;i++;) {
+let i;
+for (i=0;i<101;i++) {
     if (i%2 == 0) {
         console.log(i / 2);
     } else {
