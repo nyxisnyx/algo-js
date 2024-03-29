@@ -1,6 +1,6 @@
-let current = new Number (prompt("Please enter any number."););
-let min = new Number (prompt("Please enter a small number."););
-let max = new Number (prompt("Please enter a big number."););
+let current = new Number (prompt("Please enter any number."));
+let min = new Number (prompt("Please enter a small number."));
+let max = new Number (prompt("Please enter a big number."));
 
 if (current > min && current < max) {
     console.log(current);
