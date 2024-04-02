@@ -9,10 +9,10 @@ const rand10 = () => {
     return randomNumber;
 }
 
-let nArray = []; //creates the array where all generated numbers wil go
+
 
 let multiRand = (n) => {
-
+    let nArray = []; //creates the array where all generated numbers wil go
     for (let i = 1; i <= n; i++) { //calls rand10 n times
         nArray.push(rand10()); //pushes generated numbers into the array
     };
@@ -20,5 +20,5 @@ let multiRand = (n) => {
 };
 
 let n = new Number(prompt("Please input the number of random numbers you wish to generate."));
-multiRand(n);
-console.log(nArray);
+
+console.log(multiRand(n));
