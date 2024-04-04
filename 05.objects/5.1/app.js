@@ -33,11 +33,3 @@ function askTvSerie() {
 }
 
 askTvSerie();
-
-/*function showCast() {
-        let n = new Number(prompt("How many actors are there in the main cast?"));
-        for(i=1;i<=n;i++) {
-        let actor = new String(prompt("Name an actor in this TV show."));
-        }
-        return showCast;
-    }*/
