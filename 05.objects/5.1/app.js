@@ -10,26 +10,28 @@ Create a program that use that function to generate a TV serie object and displa
 function askTvSerie() {
     let showName = prompt("What is your favourite TV show?");
     let showStart = prompt("In what year did its production start?");
-    let showCast = [];
+
     function askActors() {
+        let showCast = [];
         let n = new Number(prompt("How many actors are there in the main cast?"));
         for(i=1;i<=n;i++) {
         let actor = new String(prompt("Name an actor in this TV show."));
         showCast.push(actor);
-        }
-        
-    }
+        };
+        return showCast;
+    };
     
-    askActors();
+    let cast = askActors();
     
     let tvShow = {
         "Show name": showName,
         "Production start": showStart,
-        "Show's main cast": showCast
+        "Show's main cast": cast
     };
+
     JSON.stringify(tvShow);
     console.log(tvShow);
     return tvShow;
-}
+};
 
 askTvSerie();
